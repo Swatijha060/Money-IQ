@@ -1,4 +1,4 @@
-# 💸 MERN Expense Tracker
+# 💸 MONEY IQ
 
 A full-stack **Expense Tracker** web application built using the **MERN stack** (MongoDB, Express.js, React, Node.js). This app allows users to manage their personal finances efficiently by tracking income and expenses, visualizing their spending, and securely storing profile information.
 
@@ -20,30 +20,35 @@ Designed for individuals who want a simple yet powerful tool to monitor their fi
 
 ## 📁 Project Structure
 
-
-
-📂 Project Structure
-
-/
-├── frontend/ # React client
+/ ├── frontend/ # React client
 │ ├── public/ # Static assets
 │ └── src/
-│ ├── components/ # Reusable UI components (Navbar, Forms, etc.)
-│ ├── pages/ # Login, SignUp, Dashboard, Landing
-│ ├── context/ # React Context API (User, Auth)
-│ ├── utils/ # Axios config, API path constants
-│ └── App.js # App entry point
+│ ├── components/ # Reusable UI components
+│ │ ├── Navbar.jsx
+│ │ ├── IncomeForm.jsx
+│ │ ├── ExpenseForm.jsx
+│ │ └── ProtectedRoute.jsx
+│ ├── pages/ # Route-based pages
+│   │
+│ │ ├── Auth Pages(Login , SignUp)
+│ │ ├── Dashboard.jsx
+│ │ └── Landing.jsx
+│ │ 
+│ │ 
+│ ├── context/ # React Context (Auth/User)
+│ │ └── UserContext.js
+│ ├── utils/ # API paths, Axios instance, etc.
+│   ├── apiPaths.js
+│   └── axiosInstance.js
+│ 
 │
 ├── backend/ # Express server
-│ ├── controllers/ # Request/response logic
-│ ├── models/ # MongoDB data schemas
-│ ├── routes/ # REST API endpoints
-│ ├── middleware/ # Auth logic and file uploads
-│ └── server.js # Server entry point
+│ ├── controllers/ # Route logic
+│ ├── models/ # Mongoose models
+│ ├── routes/ # API routes
+│ ├── middleware/ # Auth & upload middleware
+│ └── server.js # Main Express app
 │
-├── public/uploads/ # User-uploaded profile images
-├── .env # Environment variables (excluded from repo)
-└── README.md # Project documentation
 
 ---
 
