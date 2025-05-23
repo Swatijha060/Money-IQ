@@ -16,41 +16,7 @@ Designed for individuals who want a simple yet powerful tool to monitor their fi
 - 📁 **Profile Upload**: Upload a profile picture to personalize your experience.
 - 🔒 **Protected Routes**: Client-side route protection for authenticated users only.
 
----
 
-## 📁 Project Structure
-
-/ ├── frontend/ # React client
-│ ├── public/ # Static assets
-│ └── src/
-│ ├── components/ # Reusable UI components
-│ │ ├── Navbar.jsx
-│ │ ├── IncomeForm.jsx
-│ │ ├── ExpenseForm.jsx
-│ │ └── ProtectedRoute.jsx
-│ ├── pages/ # Route-based pages
-│   │
-│ │ ├── Auth Pages(Login , SignUp)
-│ │ ├── Dashboard.jsx
-│ │ └── Landing.jsx
-│ │ 
-│ │ 
-│ ├── context/ # React Context (Auth/User)
-│ │ └── UserContext.js
-│ ├── utils/ # API paths, Axios instance, etc.
-│   ├── apiPaths.js
-│   └── axiosInstance.js
-│ 
-│
-├── backend/ # Express server
-│ ├── controllers/ # Route logic
-│ ├── models/ # Mongoose models
-│ ├── routes/ # API routes
-│ ├── middleware/ # Auth & upload middleware
-│ └── server.js # Main Express app
-│
-
----
 
 ## 🔧 Setup Instructions
 
